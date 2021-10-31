@@ -12,9 +12,9 @@ $result = mysqli_query($link, $sql)
 if(isset($_GET['delete'])){
    
    if ($result) {
-   	    echo 'deleted!'
+   	    echo 'Excluído!'
    } else {
-   	echo "not deleted!";
+   	echo "Não excluído!";
    }
 } echo ".";
 
