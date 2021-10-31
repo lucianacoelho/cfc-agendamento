@@ -7,11 +7,11 @@
  
  if (!$con)
  {
-	 echo 'not connected to server';
+	 echo 'Não foi possível conectar ao servidor';
  }
  if (!mysqli_select_db($con, 'b7_30185286_db'))
  {
-	 echo 'database not selected';
+	 echo 'Banco de dados não selecionados';
  }
 
  $Room = $_POST['room'];
@@ -20,7 +20,7 @@
 
  if (!mysqli_query ($con, $sql))
  {
-	 echo 'not inserted';
+	 echo 'não inserido';
  }
  else
  {
@@ -36,7 +36,7 @@
 
  if (!mysqli_query ($con, $sql1))
  {
-	 echo 'not inserted';
+	 echo 'Não inserido';
  }
  else
  {
