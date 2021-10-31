@@ -1,14 +1,16 @@
 <?php
 session_start();
+include_once("configDB.php");
 
   $username = $_POST['username'];
   $password = $_POST['password'];
+  
  
 
   if ($username&&$password)
   {
-	 $connect = mysqli_connect("sql109.byethost7.com", "b7_30185286", "lu250595")or die("couldn't connect to the database!");
-	 mysqli_select_db($connect,"b7_30185286_db") or die ("couldn't find database!");
+	 $connect = mysqli_connect($hostname, $user, $pass)or die("couldn't connect to the database!");
+	 mysqli_select_db($connect,$database) or die ("couldn't find database!");
 	 
 	 $query = mysqli_query($connect,"SELECT * FROM admin WHERE username='$username'");
 	 

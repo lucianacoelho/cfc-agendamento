@@ -1,13 +1,13 @@
 <?php 
+include_once("configDB.php");
 
-
-$conn = mysql_connect('sql109.byethost7.com"', 'b7_30185286', 'lu250595');
+$conn = mysqli_connect($hostname, $user, $pass);
  
  if (!$con)
  {
 	 echo 'not connected to server';
  }
- if (!mysqli_select_db($con, 'b7_30185286_db'))
+ if (!mysqli_select_db($con, $database))
  {
 	 echo 'database not selected';
  }

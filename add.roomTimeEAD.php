@@ -1,15 +1,17 @@
 <?php 
- 
+ include_once("configDB.php");
  // This file adds Room (which I think is Date), Start Time and End Time for Presencial Classes
  
 
- $con = mysqli_connect ('sql109.byethost7.com', 'b7_30185286', 'lu250595');
+ $con = mysqli_connect ($hostname, $user, $pass);
+ //$con = mysqli_connect ($hostname, $username, $password);
+
  
  if (!$con)
  {
 	 echo 'not connected to server';
  }
- if (!mysqli_select_db($con, 'b7_30185286_db'))
+ if (!mysqli_select_db($con, $database))
  {
 	 echo 'database not selected';
  }

@@ -13,17 +13,13 @@ body {
 </head> -->
 
 <?php
-
+include_once("configDB.php");
 // php select option value from database
 
-$hostname = "sql109.byethost7.com";
-$username = "b7_30185286";
-$password ="lu250595";
-$databaseName = "b7_30185286_db";
 
 // connect to mysql database
 
-$connect = mysqli_connect($hostname, $username, $password, $databaseName);
+$connect = mysqli_connect($hostname, $user, $pass, $database);
 
 // mysql select query
 $query = "SELECT * FROM `course`";
@@ -117,14 +113,10 @@ body {
 
 // php select option value from database
 
-$hostname = "sql109.byethost7.com";
-$username = "b7_30185286";
-$password ="lu250595";
-$databaseName = "b7_30185286_db";
 
 // connect to mysql database
 
-$connect = mysqli_connect($hostname, $username, $password, $databaseName);
+$connect = mysqli_connect($hostname, $user, $pass, $database);
 
 // mysql select query
 $query = "SELECT * FROM `rooms`";
@@ -185,14 +177,11 @@ while($row2 = mysqli_fetch_array($result2))
 
 // php select option value from database
 
-$hostname = "sql109.byethost7.com";
-$username = "b7_30185286";
-$password ="lu250595";
-$databaseName = "b7_30185286_db";
+
 
 // connect to mysql database
 
-$connect = mysqli_connect($hostname, $username, $password, $databaseName);
+$connect = mysqli_connect($hostname, $user, $pass, $database);
 
 // mysql select query
 $query = "SELECT * FROM `rooms`";
@@ -262,14 +251,11 @@ while($row2 = mysqli_fetch_array($result2))
 
 // php select option value from database
 
-$hostname = "sql109.byethost7.com";
-$username = "b7_30185286";
-$password ="lu250595";
-$databaseName = "b7_30185286_db";
+
 
 // connect to mysql database
 
-$connect = mysqli_connect($hostname, $username, $password, $databaseName);
+$connect = mysqli_connect($hostname, $user, $pass, $database);
 
 // mysql select query
 $query = "SELECT * FROM `timer`";
@@ -338,14 +324,9 @@ while($row2 = mysqli_fetch_array($result2))
 
 // php select option value from database
 
-$hostname = "sql109.byethost7.com";
-$username = "b7_30185286";
-$password ="lu250595";
-$databaseName = "b7_30185286_db";
-
 // connect to mysql database
 
-$connect = mysqli_connect($hostname, $username, $password, $databaseName);
+$connect = mysqli_connect($hostname, $user, $pass, $database);
 
 // mysql select query
 $query = "SELECT * FROM `timer`";

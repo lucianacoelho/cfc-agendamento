@@ -3,6 +3,7 @@
    $path .= "header.php";
    include_once("header.php");
    include_once("navbar.php");
+   include_once("configDB.php");
 ?>
 <html>
 <head>
@@ -32,13 +33,10 @@ tr:hover,tr.alt:hover
      echo "<tr>
             <td>";
                // your database connection
-               $host = "sql109.byethost7.com";
-               $username = "b7_30185286";
-               $password ="lu250595";
-               $database = "b7_30185286_db";
+       
 			   
                // select database
-			   mysql_connect($host,$username,$password) or die(mysql_error()); 
+			   mysql_connect($hostname,$user,$pass) or die(mysql_error()); 
                mysql_select_db($database) or die(mysql_error()); 
 
                     $query = ("SELECT * FROM data");

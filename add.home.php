@@ -1,11 +1,12 @@
 <?php 
+include_once("configDB.php");
 
-$con = mysqli_connect ('sql109.byethost7.com', 'b7_30185286', 'lu250595');
+$con = mysqli_connect ($hostname, $user, $pass);
  if (!$con)
  {
 	 echo 'not connected to server';
  }
-mysqli_select_db($con, 'b7_30185286_db') or die(mysqli_error($mysqli));
+mysqli_select_db($con, $database) or die(mysqli_error($mysqli));
 	 
 
  function getPosts()

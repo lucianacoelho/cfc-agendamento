@@ -1,6 +1,7 @@
 <?php
    include_once("header.php");
    include_once("navbarAdmin.php");
+   include_once("configDB.php");
 ?>
 <html>
 <head>
@@ -35,13 +36,9 @@ td {
      echo "<tr>
             <td>";
                // your database connection
-               $host = "sql109.byethost7.com";
-               $username = "b7_30185286";
-               $password ="lu250595";
-               $database = "b7_30185286_db";
-			   
+               
                // select database
-			   $mysqli = mysqli_connect($host,$username,$password) or die(mysqli_error($mysqli)); 
+			   $mysqli = mysqli_connect($hostname,$user,$pass) or die(mysqli_error($mysqli)); 
                mysqli_select_db($mysqli,$database) or die(mysqli_error($mysqli)); 
 
                     $query = ("SELECT * FROM rooms");

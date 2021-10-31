@@ -10,14 +10,14 @@
 
 
 <?php
-
-  $conn = mysql_connect('sql109.byethost7.com"', 'b7_30185286', 'lu250595');
+include_once("configDB.php");
+  $conn = mysqli_connect($hostname, $user, $pass);
    if (!$conn)
     {
-   die('Could not connect: ' . mysql_error());
+   die('Could not connect: ' . mysqli_error());
   }
   //echo 'Connected successfully' . 'iancuello';
-  mysql_select_db("b7_30185286_db", $conn);
+  mysqli_select_db($database, $conn);
 ?>
 
 
@@ -42,7 +42,7 @@
 			$course =$_GET['course'];
 			$subject =$_GET['subject'];
 
-			$result = mysql_query("SELECT `faculty`,`course`, `subject` FROM `faculty`,`course`,`subject`, WHERE faculty_id=faculty_id and course_id=course_id and subject_id=subject_id");
+			$result = mysqli_query("SELECT `faculty`,`course`, `subject` FROM `faculty`,`course`,`subject`, WHERE faculty_id=faculty_id and course_id=course_id and subject_id=subject_id");
 			//HAVING course_id='$pCourse' and sem_id='$psem' and year_id='$pSy'
 		if (!$result) 
 			{

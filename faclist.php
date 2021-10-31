@@ -1,6 +1,7 @@
 <?php
    include_once("header.php");
    include_once("navbar.php");
+   include_once("configDB.php");
 ?>
 <html>
 <head>
@@ -36,13 +37,10 @@ td {
      echo "<tr>
             <td>";
                // your database connection
-         $host       = "localhost"; 
-               $username   = "root"; 
-               $password   = "";
-               $database   = "b7_30185286_db"; 
+   
          
                // select database
-         mysql_connect($host,$username,$password) or die(mysql_error()); 
+         mysql_connect($hostname,$username,$pass) or die(mysql_error()); 
                mysql_select_db($database) or die(mysql_error()); 
 
                     $query = ("SELECT * FROM faculty");

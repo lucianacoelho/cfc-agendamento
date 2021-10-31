@@ -1,6 +1,6 @@
 <?php 
-
- $link = mysqli_connect("localhost", "root", "", "b7_30185286_db");
+include_once("configDB.php");
+ $link = mysqli_connect($hostname, $user, $pass, $database);
  
 // Check connection
 if($link === false){

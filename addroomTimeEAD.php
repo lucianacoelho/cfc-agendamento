@@ -24,7 +24,7 @@ include_once("navbarAdmin.php");
 			<div class="col-lg-6">
 				<div class="jumbotron">
 				
-					<form class="form-horizontal" method="post" action="add.roomTime.php">
+					<form class="form-horizontal" method="post" action="add.roomTimeEAD.php">
 						<fieldset>
 
 							<!-- Form Name -->

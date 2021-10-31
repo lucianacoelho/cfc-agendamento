@@ -2,6 +2,7 @@
    $path = $_SERVER['DOCUMENT_ROOT'];
    $path .= "header.php";
    include_once("header.php");
+   include_once("configDB.php");
 ?>
 <html>
 <head>
