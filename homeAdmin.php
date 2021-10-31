@@ -65,12 +65,11 @@ body {
   <div class="row" align="center">
     <div class="col-lg-6">
 		<div class="jumbotron">
-		Here you will set your schedules
 		<form class="form-horizontal" method= "post" action = "add.home.php">
 			<fieldset>
 
 			<!-- Form Name -->
-			<legend>Set Schedule</legend>
+			<legend>Agendar aula</legend>
 
 
         <meta charset="UTF-8">
@@ -83,7 +82,7 @@ body {
         
 		<!-- Method Two -->
         <div class="form-group">
-			<label class="col-md-4 control-label" for="faculty">Faculty</label> 
+			<label class="col-md-4 control-label" for="faculty">Matéria</label> 
 			<div class="col-md-5">
 		<select id="faculty" name="faculty" class="form-control">
             <?php echo $options;?>
@@ -93,10 +92,10 @@ body {
 		
         <!--Method One-->
         <div class="form-group">
-			<label class="col-md-4 control-label" for="Course">Course</label> 
+			<label class="col-md-4 control-label" for="Course">Módulo</label> 
 			<div class="col-md-5">
 		<select  id="course" name="course"  class="form-control">
-
+			
             <?php while($row1 = mysqli_fetch_array($result1)):;?>
 
             <option  value="<?php echo $row1[2];?>"><?php echo $row1[2];?></option>
@@ -164,7 +163,7 @@ while($row2 = mysqli_fetch_array($result2))
         
 		<!-- Method Two -->
         <div class="form-group">
-			<label class="col-md-4 control-label" for="subject">Subject</label> 
+			<label class="col-md-4 control-label" for="subject">Modalidade</label> 
 			<div class="col-md-5">
 		<select  id="subject" name="subject"  class="form-control">
             <?php echo $options;?>
@@ -232,7 +231,7 @@ while($row2 = mysqli_fetch_array($result2))
         
 		<!-- Method Two -->
         <div class="form-group">
-			<label class="col-md-4 control-label" for="room">Room</label> 
+			<label class="col-md-4 control-label" for="room">Data</label> 
 			<div class="col-md-5">
 		<select  id="room" name="room"  class="form-control">
             <?php echo $options;?>
@@ -311,7 +310,7 @@ while($row2 = mysqli_fetch_array($result2))
 		
         <!--Method One-->
         <div class="form-group">
-			<label class="col-md-4 control-label" for="start_time">Start time</label> 
+			<label class="col-md-4 control-label" for="start_time">Horário de início</label> 
 			<div class="col-md-5">
 		<select  id="start_time" name="start_time" class="form-control">
 		  <?php echo $options;?>
@@ -382,7 +381,7 @@ while($row2 = mysqli_fetch_array($result2))
         
 		<!-- Method Two -->
         <div class="form-group">
-			<label class="col-md-4 control-label" for="end_time">End time</label> 
+			<label class="col-md-4 control-label" for="end_time">Horário de término</label> 
 			<div class="col-md-5">
 		<select  id="end_time" name="end_time" class="form-control">
             <?php echo $options;?>
