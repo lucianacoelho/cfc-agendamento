@@ -16,7 +16,7 @@
 	 echo 'database not selected';
  }
 
- $Room = $_POST['room'];
+ $Room = $_POST['roomEAD'];
 
  $sql = "INSERT INTO roomsEAD (Room) VALUES ('$Room')";
 
@@ -31,8 +31,8 @@
                            </script>';
  }
  
- $Start_Time = $_POST['starttime'];
- $End_Time = $_POST['endtime'];
+ $Start_Time = $_POST['starttimeEAD'];
+ $End_Time = $_POST['endtimeEAD'];
  
  $sql1 = "INSERT INTO timerEAD (Start_Time, End_Time) VALUES ('$Start_Time', '$End_Time')";
 

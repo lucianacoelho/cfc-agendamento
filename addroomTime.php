@@ -28,7 +28,7 @@ include_once("navbarAdmin.php");
 						<fieldset>
 
 							<!-- Form Name -->
-							<legend>Adicionar Aula Online</legend>
+							<legend>Adicionar Aula Presencial</legend>
 
 							<!-- Text input-->
 							<div class="form-group">
@@ -61,7 +61,7 @@ include_once("navbarAdmin.php");
 							<div class="form-group" align="right">
 								<label class="col-md-4 control-label" for="submit"></label>
 								<div class="col-md-5">
-									<button id="submit" name="submit" class="btn btn-primary">Adicionar Aula Online</button>
+									<button id="submit" name="submit" class="btn btn-primary">Adicionar Aula Presencial</button>
 								</div>
 							</div>
 

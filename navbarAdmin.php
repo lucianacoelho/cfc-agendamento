@@ -14,7 +14,7 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="home.php"><!--BUPC --> Sistema de Agendamento </a>
+      <a class="navbar-brand" href="home.php"><!--BUPC --> Área do Administrador</a>
     </div>
     <div>
 	
@@ -24,8 +24,8 @@
         <li><a href="addsubject.php"><span class="glyphicon glyphicon-plus-sign"></span> Modalidade</a></li>
         <li><a href="addfaculty.php"><span class="glyphicon glyphicon-plus-sign"></span> Matéria</a></li> 
         <li><a href="addcourse.php"><span class="glyphicon glyphicon-plus-sign"></span> Módulo</a></li>
-		<li><a href="addroomTime.php"><span class="glyphicon glyphicon-asterisk"></span> Dia </a></li>
-		<li><a href="addtime.php"><span class="glyphicon glyphicon-time"></span> Horário</a></li>
+		<li><a href="addroomTime.php"><span class="glyphicon glyphicon-asterisk"></span> Aula Presencial</a></li>
+		<li><a href="addroomTimeEAD.php"><span class="glyphicon glyphicon-time"></span>  Aula Online</a></li>
         <!-- <li><a href="list.php"><span class="glyphicon glyphicon-list"></span> Hora de Término</a></li> -->
         <li><a href="register.php"><span class="glyphicon glyphicon-calendar"></span> Registrar Aluno </a></li>
 		

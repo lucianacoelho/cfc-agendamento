@@ -167,6 +167,14 @@ CREATE TABLE IF NOT EXISTS `rooms` (
 `id` int(11) NOT NULL,
   `room` varchar(250) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+--
+-- Table structure for table `roomsEAD`
+--
+
+CREATE TABLE IF NOT EXISTS `roomsEAD` (
+`id` int(11) NOT NULL,
+  `room` varchar(250) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `rooms`
@@ -223,6 +231,15 @@ INSERT INTO `subject` (`subject_id`, `subject_code`, `subject_description`) VALU
 --
 
 CREATE TABLE IF NOT EXISTS `timer` (
+`id` int(11) NOT NULL,
+  `start_time` varchar(250) NOT NULL,
+  `end_time` varchar(250) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+--
+-- Table structure for table `timerEAD`
+--
+
+CREATE TABLE IF NOT EXISTS `timerEAD` (
 `id` int(11) NOT NULL,
   `start_time` varchar(250) NOT NULL,
   `end_time` varchar(250) NOT NULL
@@ -286,12 +303,6 @@ ALTER TABLE `rooms`
  ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `roomsEAD`
---
-ALTER TABLE `roomsEAD`
- ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `subject`
 --
 ALTER TABLE `subject`
@@ -299,10 +310,6 @@ ALTER TABLE `subject`
 
 --
 -- Indexes for table `timer`
---
-ALTER TABLE `timerEAD`
- ADD PRIMARY KEY (`id`);
--- Indexes for table `timerEAD`
 --
 ALTER TABLE `timer`
  ADD PRIMARY KEY (`id`);
@@ -354,38 +361,3 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
--- AUTO_INCREMENT for table `rooms`
---
-ALTER TABLE `roomsEAD`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
--- AUTO_INCREMENT for table `timer`
---
-ALTER TABLE `timerEAD`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
--- --------------------------------------------------------
-
---
--- Table structure for table `timerEAD`
---
-
-CREATE TABLE IF NOT EXISTS `timerEAD` (
-`id` int(11) NOT NULL,
-  `start_time` varchar(250) NOT NULL,
-  `end_time` varchar(250) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
-
---
--- Table structure for table `roomsEAD`
---
-
-CREATE TABLE IF NOT EXISTS `rooms` (
-`id` int(11) NOT NULL,
-  `room` varchar(250) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;

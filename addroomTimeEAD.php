@@ -32,27 +32,27 @@ include_once("navbarAdmin.php");
 
 							<!-- Text input-->
 							<div class="form-group">
-								<label class="col-md-4 control-label" for="room">Data</label>
+								<label class="col-md-4 control-label" for="roomEAD">Data</label>
 								<div class="col-md-5">
-									<input id="room" name="room" type="text" placeholder="" class="form-control input-md" required="">
+									<input id="roomEAD" name="roomEAD" type="text" placeholder="" class="form-control input-md" required="">
 
 								</div>
 							</div>
 
 							<!-- Text input-->
 							<div class="form-group">
-								<label class="col-md-4 control-label" for="starttime">Início</label>
+								<label class="col-md-4 control-label" for="starttimeEAD">Início</label>
 								<div class="col-md-5">
-									<input id="starttime" name="starttime" type="text" placeholder="" class="form-control input-md" required="">
+									<input id="starttimeEAD" name="starttimeEAD" type="text" placeholder="" class="form-control input-md" required="">
 
 								</div>
 							</div>
 
 							<!-- Text input-->
 							<div class="form-group">
-								<label class="col-md-4 control-label" for="endtime">Término</label>
+								<label class="col-md-4 control-label" for="endtimeEAD">Término</label>
 								<div class="col-md-5">
-									<input id="endtime" name="endtime" type="text" placeholder="" class="form-control input-md" required="">
+									<input id="endtimeEAD" name="endtimeEAD" type="text" placeholder="" class="form-control input-md" required="">
 
 								</div>
 							</div>
