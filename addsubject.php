@@ -19,16 +19,15 @@ body {
   <div class="row" align="center">
     <div class="col-lg-6">
 		<div class="jumbotron">
-                Here you will Add subjects
 				<form class="form-horizontal" method= "POST" action="add.sub.php">
 				<fieldset>
 
 				<!-- Form Name -->
-				<legend>Add Subjects</legend>
+				<legend>Adicionar modalidade</legend>
 
 				<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="subcode">Subject Code</label>  
+				  <label class="col-md-4 control-label" for="subcode">Modalidade</label>  
 				  <div class="col-md-5">
 				  <input id="subcode" name="subcode" type="text" placeholder="" class="form-control input-md" required="">
 					
@@ -37,7 +36,7 @@ body {
 
 				<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="subdescription">Subject Description</label>  
+				  <label class="col-md-4 control-label" for="subdescription">Nome da modalidade</label>  
 				  <div class="col-md-5">
 				  <input id="subdescription" name="subdescription" type="text" placeholder="" class="form-control input-md" required="">
 					
