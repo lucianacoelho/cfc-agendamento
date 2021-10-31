@@ -26,7 +26,7 @@ tr:hover,tr.alt:hover
 		<div id="form">
 		
 			<fieldset>
-            <legend>Schedules</legend>
+            <legend>Agenda</legend>
 <body>
     <?php
      echo "<tr>
