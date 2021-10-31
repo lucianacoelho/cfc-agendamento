@@ -19,16 +19,15 @@ body {
   <div class="row" align="center">
     <div class="col-lg-6">
 		<div class="jumbotron">
-                Here you will Assign faculty
 				<form class="form-horizontal" method= "post" action="add.fac.php">
 				<fieldset>
 
 				<!-- Form Name -->
-				<legend>Add Faculty</legend>
+				<legend>Adicionar matéria</legend>
 				
 				<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="falname">Faculty Name</label>  
+				  <label class="col-md-4 control-label" for="falname">Nome da matéria</label>  
 				  <div class="col-md-5">
 				  <input id="falname" name="falname" type="text" placeholder="" class="form-control input-md" required="">
 					
@@ -37,7 +36,7 @@ body {
 
 				<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="Designation">Designation</label>  
+				  <label class="col-md-4 control-label" for="Designation">Designação</label>  
 				  <div class="col-md-5">
 				  <input id="Designation" name="Designation" type="text" placeholder="" class="form-control input-md" required="">
 				  <span class="help-block"></span>  
@@ -48,7 +47,7 @@ body {
 				<div class="form-group"  align="right">
 				  <label class="col-md-4 control-label" for="submit"></label>
 				  <div class="col-md-5">
-					<button id="submit" name="submit" class="btn btn-primary">Add Faculty</button>
+					<button id="submit" name="submit" class="btn btn-primary">Adicionar matéria</button>
 				  </div>
 				</div>
 
