@@ -3,7 +3,7 @@
 $con = mysqli_connect ('sql109.byethost7.com', 'b7_30185286', 'lu250595');
  if (!$con)
  {
-	 echo 'not connected to server';
+	 echo 'Não foi possível conectar ao servidor';
  }
 mysqli_select_db($con, 'b7_30185286_db') or die(mysqli_error($mysqli));
 	 
