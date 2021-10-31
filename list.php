@@ -15,7 +15,7 @@ body {
 </head>
 <body>
             <div align="center">
-            <legend>List of Faculties</legend></fieldset>
+            <legend>Lista de matérias</legend></fieldset>
 			<?php
 				include_once("faclist.php");
 			?>
@@ -24,7 +24,7 @@ body {
 			<br>
 			<br>
 			<div align="center">
-			<legend>List of Courses</legend></fieldset>
+			<legend>Lista de módulos</legend></fieldset>
 			<?php 
               include_once("corlist.php");
 			?>
@@ -33,7 +33,7 @@ body {
 			<br>
 			<br>
 			<div align="center">
-			<legend>List of Subjects</legend></fieldset>
+			<legend>Lista de modalidades</legend></fieldset>
 			<?php 
 			  include_once("sublist.php");
 			?>
@@ -42,7 +42,7 @@ body {
 			<br>
 			<br>
 			<div align="center">
-			<legend>List of rooms</legend></fieldset>
+			<legend>Lista de datas</legend></fieldset>
 			<?php
 				 include_once("roomlist.php");
 			?>
@@ -51,7 +51,7 @@ body {
 			<br>
 			<br>
 			<div align="center">
-			<legend>List of class time</legend></fieldset>
+			<legend>Lista de horários</legend></fieldset>
 			<?php
 				 include_once("timelist.php");
 			?>
