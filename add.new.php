@@ -24,12 +24,12 @@ body {
 			<fieldset>
 
 			<!-- Form Name -->
-			<legend>Add Information from professor</legend>
+			<legend>Adicionar informações</legend>
 
 			
 			<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="corcode">Course Code</label>  
+				  <label class="col-md-4 control-label" for="corcode">Código do módulo</label>  
 				  <div class="col-md-5">
 				  <input id="corcode" name="corcode" type="text" placeholder="" class="form-control input-md" required="">	
 				  </div>
@@ -38,14 +38,14 @@ body {
 			
 			<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="corname">Course Name</label>  
+				  <label class="col-md-4 control-label" for="corname">Nome do módulo</label>  
 				  <div class="col-md-5">
 				  <input id="corname" name="corname" type="text" placeholder="" class="form-control input-md" required="">
 				  </div>
 				</div>
 
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="falname">Faculty Name</label>  
+				  <label class="col-md-4 control-label" for="falname">Nome da matéria</label>  
 				  <div class="col-md-5">
 				  <input id="falname" name="falname" type="text" placeholder="" class="form-control input-md" required="">
 					
@@ -54,7 +54,7 @@ body {
 
 				<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="Designation">Designation</label>  
+				  <label class="col-md-4 control-label" for="Designation">Designação</label>  
 				  <div class="col-md-5">
 				  <input id="Designation" name="Designation" type="text" placeholder="" class="form-control input-md" required="">
 				  <span class="help-block"></span>  
@@ -62,7 +62,7 @@ body {
 				</div>
 
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="room">Room</label>  
+				  <label class="col-md-4 control-label" for="room">Data</label>  
 				  <div class="col-md-5">
 				  <input id="room" name="room" type="text" placeholder="" class="form-control input-md" required="">
 					
@@ -70,7 +70,7 @@ body {
 				</div>
 
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="subcode">Subject Code</label>  
+				  <label class="col-md-4 control-label" for="subcode">Código da modalidade</label>  
 				  <div class="col-md-5">
 				  <input id="subcode" name="subcode" type="text" placeholder="" class="form-control input-md" required="">
 					
@@ -79,7 +79,7 @@ body {
 
 				<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="subdescription">Subject Description</label>  
+				  <label class="col-md-4 control-label" for="subdescription">Descrição da modalidade</label>  
 				  <div class="col-md-5">
 				  <input id="subdescription" name="subdescription" type="text" placeholder="" class="form-control input-md" required="">
 					
@@ -87,7 +87,7 @@ body {
 				</div>
 
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="starttime">Start time</label>  
+				  <label class="col-md-4 control-label" for="starttime">Horário de início</label>  
 				  <div class="col-md-5">
 				  <input id="starttime" name="starttime" type="text" placeholder="" class="form-control input-md" required="">
 					
@@ -96,7 +96,7 @@ body {
 				
 				<!-- Text input-->
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="endtime">End time</label>  
+				  <label class="col-md-4 control-label" for="endtime">Horário de término</label>  
 				  <div class="col-md-5">
 				  <input id="endtime" name="endtime" type="text" placeholder="" class="form-control input-md" required="">
 					
@@ -107,7 +107,7 @@ body {
 			<div class="form-group"  align="right" >
 			  <label class="col-md-4 control-label" for="submit"></label>
 			  <div class="col-md-5">
-				<button id="submit" name="submit" class="btn btn-success">Add Course</button>
+				<button id="submit" name="submit" class="btn btn-success">Adicionar módulo</button>
 			  </div>
 			</div>
 
