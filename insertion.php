@@ -39,7 +39,7 @@ if(isset($_POST['insert']))
 		if (0 < mysqli_num_rows($existing_Result)) {
 			
 			echo '<script type="text/javascript">
-                  alert("Duplicate Data! There is already existing schedule at the table. please choose another schedule. thank you");
+                  alert("Dados duplicados! Por favor, tente novamente.");
                    location="id17838796_b7_30185286_db.php";
                  </script>';
         } 
@@ -56,13 +56,13 @@ if(isset($_POST['insert']))
             {
 
                 echo '<script type="text/javascript">
-                      alert("New Schedule Added Successfully");
+                      alert("Sucesso!");
                          location="tb.php";
                            </script>';
 				
             }
 			else{
-                echo 'Data Not Inserted';
+                echo 'Não inserido.';
             }
         }
     } catch (Exception $ex) {

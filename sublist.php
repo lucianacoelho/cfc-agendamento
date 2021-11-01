@@ -71,7 +71,7 @@ td {
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
         echo '<script type="text/javascript">
-                      alert("Schedule Successfuly Deleted");
+                      alert("Deletado com sucesso!");
                          location="list.php";
                            </script>';
     }
@@ -81,7 +81,7 @@ td {
     $sql = mysqli_query($mysqli,"DELETE FROM subject WHERE subject_id='$subject_id'");
     if(!$sql)
     {
-        echo ("Could not delete rows" .mysqli_error($mysqli));
+        echo ("Não foi possível deletar." .mysqli_error($mysqli));
     }
     
     }

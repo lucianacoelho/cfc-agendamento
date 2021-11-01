@@ -5,11 +5,11 @@
  
  if (!$con)
  {
-	 echo 'not connected to server';
+	echo 'Não foi possível conectar ao servidor';
  }
  if (!mysqli_select_db($con, $database))
  {
-	 echo 'database not selected';
+	echo 'Banco de dados não selecionado';
  }
 
  $Faculty_Name = $_POST['falname'];
@@ -19,7 +19,7 @@
 
  if (!mysqli_query ($con, $sql))
  {
-	 echo 'not inserted';
+	echo 'não inserido';
  }
  else 
  {

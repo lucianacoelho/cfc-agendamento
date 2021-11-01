@@ -46,13 +46,13 @@ include_once("configDB.php");
 			//HAVING course_id='$pCourse' and sem_id='$psem' and year_id='$pSy'
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou.");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado!';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -86,13 +86,13 @@ include_once("configDB.php");
 			//HAVING course_id='$pCourse' and sem_id='$psem' and year_id='$pSy'
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado!';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -128,13 +128,13 @@ include_once("configDB.php");
 			//HAVING course_id='$pCourse' and sem_id='$psem' and year_id='$pSy'
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -170,13 +170,13 @@ include_once("configDB.php");
 			//HAVING course_id='$pCourse' and sem_id='$psem' and year_id='$pSy'
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -212,13 +212,13 @@ include_once("configDB.php");
 			//HAVING course_id='$pCourse' and sem_id='$psem' and year_id='$pSy'
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -258,13 +258,13 @@ include_once("configDB.php");
 			//HAVING course_id='$pCourse' and sem_id='$psem' and year_id='$pSy'
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -300,13 +300,13 @@ include_once("configDB.php");
 			//HAVING course_id='$pCourse' and sem_id='$psem' and year_id='$pSy'
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -342,13 +342,13 @@ include_once("configDB.php");
 			//HAVING course_id='$pCourse' and sem_id='$psem' and year_id='$pSy'
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -384,13 +384,13 @@ include_once("configDB.php");
 			//HAVING course_id='$pCourse' and sem_id='$psem' and year_id='$pSy'
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -426,13 +426,13 @@ include_once("configDB.php");
 			//HAVING course_id='$pCourse' and sem_id='$psem' and year_id='$pSy'
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -472,13 +472,13 @@ include_once("configDB.php");
 			//HAVING course_id='$pCourse' and sem_id='$psem' and year_id='$pSy'
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -514,13 +514,13 @@ include_once("configDB.php");
 			//HAVING course_id='$pCourse' and sem_id='$psem' and year_id='$pSy'
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -556,13 +556,13 @@ include_once("configDB.php");
 			//HAVING course_id='$pCourse' and sem_id='$psem' and year_id='$pSy'
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -597,13 +597,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -638,13 +638,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -683,13 +683,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -724,13 +724,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -765,13 +765,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -806,13 +806,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -847,13 +847,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -892,13 +892,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -933,13 +933,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -974,13 +974,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1015,13 +1015,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1056,13 +1056,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1101,13 +1101,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1142,13 +1142,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1183,13 +1183,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1224,13 +1224,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1265,13 +1265,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1310,13 +1310,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1351,13 +1351,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1392,13 +1392,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1433,13 +1433,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1474,13 +1474,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1519,13 +1519,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1560,13 +1560,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1601,13 +1601,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1642,13 +1642,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1683,13 +1683,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1728,13 +1728,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1769,13 +1769,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1810,13 +1810,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1851,13 +1851,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1892,13 +1892,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1937,13 +1937,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -1978,13 +1978,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2019,13 +2019,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2060,13 +2060,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2101,13 +2101,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2146,13 +2146,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2187,13 +2187,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2228,13 +2228,13 @@ include_once("configDB.php");
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2269,13 +2269,13 @@ $result = mysql_query("SELECT `sched`.*,`room`.`room_name` ,`course`.`course_yrS
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2310,13 +2310,13 @@ $result = mysql_query("SELECT `sched`.*,`room`.`room_name` ,`course`.`course_yrS
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2355,13 +2355,13 @@ $result = mysql_query("SELECT `sched`.*,`room`.`room_name` ,`course`.`course_yrS
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2396,13 +2396,13 @@ $result = mysql_query("SELECT `sched`.*,`room`.`room_name` ,`course`.`course_yrS
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2437,13 +2437,13 @@ $result = mysql_query("SELECT `sched`.*,`room`.`room_name` ,`course`.`course_yrS
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2478,13 +2478,13 @@ $result = mysql_query("SELECT `sched`.*,`room`.`room_name` ,`course`.`course_yrS
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2519,13 +2519,13 @@ $result = mysql_query("SELECT `sched`.*,`room`.`room_name` ,`course`.`course_yrS
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2564,13 +2564,13 @@ $result = mysql_query("SELECT `sched`.*,`room`.`room_name` ,`course`.`course_yrS
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2605,13 +2605,13 @@ $result = mysql_query("SELECT `sched`.*,`room`.`room_name` ,`course`.`course_yrS
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2646,13 +2646,13 @@ $result = mysql_query("SELECT `sched`.*,`room`.`room_name` ,`course`.`course_yrS
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2687,13 +2687,13 @@ $result = mysql_query("SELECT `sched`.*,`room`.`room_name` ,`course`.`course_yrS
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{
@@ -2728,13 +2728,13 @@ $result = mysql_query("SELECT `sched`.*,`room`.`room_name` ,`course`.`course_yrS
   			");
 		if (!$result) 
 			{
-			die("Query to show fields from table failed");
+			die("Falhou!");
 			}
 		$numberOfRows = MYSQL_NUMROWS($result);
 		
 		If ($numberOfRows == 0) 
 			{
-			echo 'Sorry No Record Found!';
+			echo 'Nada foi encontrado.';
 			}
 		else if ($numberOfRows > 0) 
 			{

@@ -4,11 +4,11 @@
  
  if (!$con)
  {
-	 echo 'not connected to server';
+  echo 'Não foi possível conectar ao servidor';
  }
  if (!mysqli_select_db($con, $database))
  {
-	 echo 'database not selected';
+  echo 'Banco de dados não selecionado';
  }
 
  $Subject_Code = $_POST['subcode'];
@@ -18,12 +18,12 @@
 
  if (!mysqli_query ($con, $sql))
  {
-	 echo 'not inserted';
+	 echo 'Não inserido';
  }
  else
  {
 	 echo '<script type="text/javascript">
-                      alert("New Subject Added!");
+                      alert("Nova modalidade inserida");
                          location="homeAdmin.php";
                            </script>';
  }

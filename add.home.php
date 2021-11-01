@@ -4,7 +4,7 @@ include_once("configDB.php");
 $con = mysqli_connect ($hostname, $user, $pass);
  if (!$con)
  {
-	 echo 'not connected to server';
+  echo 'Não foi possível conectar ao servidor';
  }
 mysqli_select_db($con, $database) or die(mysqli_error($mysqli));
 	 
@@ -29,7 +29,7 @@ if (isset($_POST['insert'])) {
 	$existing_Result = mysqli_query($con, $existing_Query);
 	if(0 < mysqli_num_rows ($existing_Result)){
 		echo '<script type="text/javascript">
-                      alert("your entry is already in the tale/list. please choose another schedule.");
+                      alert("Item já existente. Por favor, escolha outra horário.");
                          window.location="home.php";
                            </script>';
 	} else {
@@ -43,7 +43,7 @@ if (isset($_POST['insert'])) {
                            </script>";
     } else {
       echo "<script type='text/javascript'>
-                      alert('Data not inserted!');
+                      alert('Não inserido.');
                          window.location='homeAdmin.php';
                            </script>";
     }

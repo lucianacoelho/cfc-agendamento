@@ -71,7 +71,7 @@ td {
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
         echo '<script type="text/javascript">
-                      alert("Schedule Successfuly Deleted");
+                      alert("Agendamento deletado");
                          location="list.php";
                            </script>';
     }

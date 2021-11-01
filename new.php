@@ -34,12 +34,12 @@ $conn = mysqli_connect($hostname, $user, $pass);
     
     if ($insert_Result) {
       echo "<script type='text/javascript'>
-                      alert('New schedule added successfuly');
+                      alert('Sucesso!');
                          window.location='tablelist.php';
                            </script>";
     } else {
       echo "<script type='text/javascript'>
-                      alert('Data not inserted!');
+                      alert('Não inserido!');
                          window.location='home.php';
                            </script>";
     }

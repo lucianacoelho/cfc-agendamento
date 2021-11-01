@@ -31,20 +31,20 @@ include_once("configDB.php");
 		 }
 		 else
 			 echo '<script type="text/javascript">
-                      alert("Wrong Password!");
+                      alert("Senha incorreta!");
                          location="index.php";
                            </script>';
 	 }	 
 	 else
          die('<script type="text/javascript">
-                      alert("This user doesnt exist!");
+                      alert("Usuário inexistente!");
                          location="index.php";
                            </script>');		 
 	  
   }
   else 
 	  die('<script type="text/javascript">
-                      alert("Please enter a username and password!");
+                      alert("Faça login!");
                          location="index.php";
                            </script>');
   

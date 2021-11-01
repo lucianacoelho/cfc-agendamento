@@ -7,11 +7,11 @@
  
  if (!$con)
  {
-	 echo 'not connected to server';
+	echo 'Não foi possível conectar ao servidor';
  }
  if (!mysqli_select_db($con, $database))
  {
-	 echo 'database not selected';
+	echo 'Banco de dados não selecionado';
  }
 
  $Room = $_POST['room'];
@@ -20,12 +20,12 @@
 
  if (!mysqli_query ($con, $sql))
  {
-	 echo 'not inserted';
+	echo 'Não inserido';
  }
  else
  {
 	 echo '<script type="text/javascript">
-                      alert("New Room Reserved!");
+                      alert("Nova aula inserida!");
                            </script>';
  }
  
@@ -36,12 +36,12 @@
 
  if (!mysqli_query ($con, $sql1))
  {
-	 echo 'not inserted';
+	 echo 'Não inserido.';
  }
  else
  {
 	 echo '<script type="text/javascript">
-                      alert("New Time Added!");
+	 alert("Nova aula inserida!");
                          location="homeAdmin.php";
                            </script>';
  }

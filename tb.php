@@ -74,7 +74,7 @@ tr:hover,tr.alt:hover
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
 		echo '<script type="text/javascript">
-                      alert("Schedule Successfuly Deleted");
+                      alert("Deletado com sucesso!");
                          location="tb.php";
                            </script>';
     }
@@ -84,7 +84,7 @@ tr:hover,tr.alt:hover
     $sql = mysql_query("DELETE FROM data WHERE id='$id'");
     if(!$sql)
     {
-        echo ("Could not delete rows" .mysql_error());
+        echo ("Falhou!" .mysql_error());
     }
 	
     }

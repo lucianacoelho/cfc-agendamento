@@ -68,7 +68,7 @@
     $sql = mysqli_query($mysqli,"DELETE FROM addtable WHERE id='$id'");
     if(!$sql)
     {
-        echo ("Could not delete rows" .mysqli_error($mysqli));
+        echo ("Falhou!" .mysqli_error($mysqli));
     }
     
     }

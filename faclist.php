@@ -71,7 +71,7 @@ td {
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
     echo '<script type="text/javascript">
-                      alert("row Successfuly Deleted");
+                      alert("Deletado com sucesso!");
                          location="list.php";
                            </script>';
     }

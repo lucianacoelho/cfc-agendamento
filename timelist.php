@@ -70,7 +70,7 @@ td {
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
 		echo '<script type="text/javascript">
-                      alert("Schedule Successfuly Deleted");
+                      alert("Deletado com sucesso!");
                          location="tablelist.php";
                            </script>';
     }
@@ -80,7 +80,7 @@ td {
     $sql = mysqli_query($mysqli,"DELETE FROM timer WHERE id='$id'");
     if(!$sql)
     {
-        echo ("Could not delete rows" .mysqli_error($mysqli));
+        echo ("Falhou!" .mysqli_error($mysqli));
     }
 	
     }
