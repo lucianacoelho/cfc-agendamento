@@ -40,13 +40,13 @@ CREATE TABLE IF NOT EXISTS `addtable` (
 -- Dumping data for table `addtable`
 --
 
-INSERT INTO `addtable` (`id`, `faculty`, `course`, `subject`, `room`, `start_time`, `end_time`) VALUES
-(47, 'Information Technology', 'Computer Science', 'OOP C++', 'CP19', '7:30 am', '9:00 am'),
-(48, 'Engineering', 'Computer Engineering ', 'Discrete Mathematics', 'NB15', '10:00 am', '12:00 pm'),
-(50, 'Management Studies', 'Micro Economics', 'Economics', 'PK22', '1:00 pm', '2:00 pm'),
-(51, 'Philosophy', 'The History of Ancient Philosophy', 'The Philosophy of Philosophy', 'SB11', '2:00 pm', '3:00 pm'),
-(52, 'Natural Science', 'Biological Anthropology Course', 'Biology', 'CP09', '3:00 pm', '5:00 pm'),
-(53, 'Commerce', 'Higher Program in Business Management', 'Business Studies', 'DM28', '8:00 am', '10:30 am');
+-- INSERT INTO `addtable` (`id`, `faculty`, `course`, `subject`, `room`, `start_time`, `end_time`) VALUES
+-- (47, 'Information Technology', 'Computer Science', 'OOP C++', 'CP19', '7:30 am', '9:00 am'),
+-- (48, 'Engineering', 'Computer Engineering ', 'Discrete Mathematics', 'NB15', '10:00 am', '12:00 pm'),
+-- (50, 'Management Studies', 'Micro Economics', 'Economics', 'PK22', '1:00 pm', '2:00 pm'),
+-- (51, 'Philosophy', 'The History of Ancient Philosophy', 'The Philosophy of Philosophy', 'SB11', '2:00 pm', '3:00 pm'),
+-- (52, 'Natural Science', 'Biological Anthropology Course', 'Biology', 'CP09', '3:00 pm', '5:00 pm'),
+-- (53, 'Commerce', 'Higher Program in Business Management', 'Business Studies', 'DM28', '8:00 am', '10:30 am');
 
 -- --------------------------------------------------------
 
@@ -103,19 +103,19 @@ CREATE TABLE IF NOT EXISTS `course` (
 -- Dumping data for table `course`
 --
 
-INSERT INTO `course` (`course_id`, `course_code`, `course_name`) VALUES
-(2, 'BSCS', 'Computer Science'),
-(3, 'CS55', 'Computer Engineering '),
-(6, 'CS02', 'Computer Security '),
-(9, 'WD51', 'Web Development'),
-(10, '5051', 'Hardware and Networking'),
-(11, '6002', 'Advance Wordpress'),
-(12, 'ME55', 'Micro Economics'),
-(13, 'ST00', 'Stock Trading'),
-(14, 'MA85', 'Macro Economics'),
-(15, 'AP55', 'The History of Ancient Philosophy'),
-(16, 'BC25', 'Biological Anthropology Course'),
-(17, 'BE05', 'Higher Program in Business Management');
+-- INSERT INTO `course` (`course_id`, `course_code`, `course_name`) VALUES
+-- (2, 'BSCS', 'Computer Science'),
+-- (3, 'CS55', 'Computer Engineering '),
+-- (6, 'CS02', 'Computer Security '),
+-- (9, 'WD51', 'Web Development'),
+-- (10, '5051', 'Hardware and Networking'),
+-- (11, '6002', 'Advance Wordpress'),
+-- (12, 'ME55', 'Micro Economics'),
+-- (13, 'ST00', 'Stock Trading'),
+-- (14, 'MA85', 'Macro Economics'),
+-- (15, 'AP55', 'The History of Ancient Philosophy'),
+-- (16, 'BC25', 'Biological Anthropology Course'),
+-- (17, 'BE05', 'Higher Program in Business Management');
 
 -- --------------------------------------------------------
 
@@ -149,38 +149,46 @@ CREATE TABLE IF NOT EXISTS `faculty` (
 -- Dumping data for table `faculty`
 --
 
-INSERT INTO `faculty` (`faculty_id`, `faculty_name`, `designation`) VALUES
-(14, 'Engineering', 'CS-OJT Coordinator'),
-(16, 'Information Technology', 'Computer Security'),
-(17, 'Management Studies', 'Elective 3'),
-(19, 'Philosophy', 'Demo2'),
-(20, 'Natural Science', 'Demo3'),
-(21, 'Commerce', 'Demo4');
+-- INSERT INTO `faculty` (`faculty_id`, `faculty_name`, `designation`) VALUES
+-- (14, 'Engineering', 'CS-OJT Coordinator'),
+-- (16, 'Information Technology', 'Computer Security'),
+-- (17, 'Management Studies', 'Elective 3'),
+-- (19, 'Philosophy', 'Demo2'),
+-- (20, 'Natural Science', 'Demo3'),
+-- (21, 'Commerce', 'Demo4');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rooms`
+-- Table structure for table `date`
 --
 
-CREATE TABLE IF NOT EXISTS `rooms` (
+CREATE TABLE IF NOT EXISTS `date` (
 `id` int(11) NOT NULL,
   `room` varchar(250) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+--
+-- Table structure for table `dateEAD`
+--
+
+CREATE TABLE IF NOT EXISTS `dateEAD` (
+`id` int(11) NOT NULL,
+  `dateEAD` varchar(250) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `rooms`
+-- Dumping data for table `date`
 --
 
-INSERT INTO `rooms` (`id`, `room`) VALUES
-(3, 'SB14'),
-(8, 'CP09'),
-(9, 'SB11'),
-(10, 'CP19'),
-(11, 'DM28'),
-(12, 'NB15'),
-(13, 'SS36'),
-(14, 'PK22');
+-- INSERT INTO `date` (`id`, `room`) VALUES
+-- (3, 'SB14'),
+-- (8, 'CP09'),
+-- (9, 'SB11'),
+-- (10, 'CP19'),
+-- (11, 'DM28'),
+-- (12, 'NB15'),
+-- (13, 'SS36'),
+-- (14, 'PK22');
 
 -- --------------------------------------------------------
 
@@ -198,23 +206,23 @@ CREATE TABLE IF NOT EXISTS `subject` (
 -- Dumping data for table `subject`
 --
 
-INSERT INTO `subject` (`subject_id`, `subject_code`, `subject_description`) VALUES
-(2, 'CS19', 'Computer Programming 1'),
-(3, 'CP02', 'Computer Simulation'),
-(5, 'DM15', 'Digital Design'),
-(6, 'WP01', 'Web Programming 1'),
-(8, 'NA08', 'Network Analyst'),
-(9, 'SM85', 'Databases'),
-(10, 'OP55', 'OOP C++'),
-(11, 'AS86', 'Microprocessor and Assembly Language'),
-(12, 'MM80', 'Discrete Mathematics'),
-(13, 'NM65', ' 	Marketing Management'),
-(14, 'SD01', 'System Analysis and Design'),
-(15, 'EE54', 'Economics'),
-(16, 'PO69', ' Freedom and Equality Across Borders '),
-(17, 'PH88', ' The Philosophy of Philosophy '),
-(18, 'BI09', 'Biology'),
-(19, 'BU56', 'Business Studies');
+-- INSERT INTO `subject` (`subject_id`, `subject_code`, `subject_description`) VALUES
+-- (2, 'CS19', 'Computer Programming 1'),
+-- (3, 'CP02', 'Computer Simulation'),
+-- (5, 'DM15', 'Digital Design'),
+-- (6, 'WP01', 'Web Programming 1'),
+-- (8, 'NA08', 'Network Analyst'),
+-- (9, 'SM85', 'Databases'),
+-- (10, 'OP55', 'OOP C++'),
+-- (11, 'AS86', 'Microprocessor and Assembly Language'),
+-- (12, 'MM80', 'Discrete Mathematics'),
+-- (13, 'NM65', ' 	Marketing Management'),
+-- (14, 'SD01', 'System Analysis and Design'),
+-- (15, 'EE54', 'Economics'),
+-- (16, 'PO69', ' Freedom and Equality Across Borders '),
+-- (17, 'PH88', ' The Philosophy of Philosophy '),
+-- (18, 'BI09', 'Biology'),
+-- (19, 'BU56', 'Business Studies');
 
 -- --------------------------------------------------------
 
@@ -227,23 +235,32 @@ CREATE TABLE IF NOT EXISTS `timer` (
   `start_time` varchar(250) NOT NULL,
   `end_time` varchar(250) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+--
+-- Table structure for table `timerEAD`
+--
+
+CREATE TABLE IF NOT EXISTS `timerEAD` (
+`id` int(11) NOT NULL,
+  `start_timeEAD` varchar(250) NOT NULL,
+  `end_timeEAD` varchar(250) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `timer`
 --
 
-INSERT INTO `timer` (`id`, `start_time`, `end_time`) VALUES
-(3, '5:30 pm', '7:30 pm'),
-(4, '1:00 pm', '5:30 pm'),
-(6, '10:00 am', '12:00 pm'),
-(7, '6:00 pm', '7:00 pm'),
-(8, '7:30 am', '10:30 am'),
-(9, '9:20 am', '1:40 pm'),
-(10, '6:30 am', '9:00 am'),
-(11, '8:00 am', '2:00 pm'),
-(12, '10:30 am', '3:00 pm'),
-(13, '2:00 pm', '5:00 pm'),
-(14, '3:00 pm', '6:00 pm');
+-- INSERT INTO `timer` (`id`, `start_time`, `end_time`) VALUES
+-- (3, '5:30 pm', '7:30 pm'),
+-- (4, '1:00 pm', '5:30 pm'),
+-- (6, '10:00 am', '12:00 pm'),
+-- (7, '6:00 pm', '7:00 pm'),
+-- (8, '7:30 am', '10:30 am'),
+-- (9, '9:20 am', '1:40 pm'),
+-- (10, '6:30 am', '9:00 am'),
+-- (11, '8:00 am', '2:00 pm'),
+-- (12, '10:30 am', '3:00 pm'),
+-- (13, '2:00 pm', '5:00 pm'),
+-- (14, '3:00 pm', '6:00 pm');
 
 --
 -- Indexes for dumped tables
@@ -280,15 +297,9 @@ ALTER TABLE `faculty`
  ADD PRIMARY KEY (`faculty_id`);
 
 --
--- Indexes for table `rooms`
+-- Indexes for table `date`
 --
-ALTER TABLE `rooms`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `roomsEAD`
---
-ALTER TABLE `roomsEAD`
+ALTER TABLE `date`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -299,10 +310,6 @@ ALTER TABLE `subject`
 
 --
 -- Indexes for table `timer`
---
-ALTER TABLE `timerEAD`
- ADD PRIMARY KEY (`id`);
--- Indexes for table `timerEAD`
 --
 ALTER TABLE `timer`
  ADD PRIMARY KEY (`id`);
@@ -337,9 +344,9 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 ALTER TABLE `faculty`
 MODIFY `faculty_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=22;
 --
--- AUTO_INCREMENT for table `rooms`
+-- AUTO_INCREMENT for table `date`
 --
-ALTER TABLE `rooms`
+ALTER TABLE `date`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `subject`
@@ -355,37 +362,10 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
--- AUTO_INCREMENT for table `rooms`
---
-ALTER TABLE `roomsEAD`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
--- AUTO_INCREMENT for table `timer`
---
-ALTER TABLE `timerEAD`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
--- --------------------------------------------------------
+ALTER TABLE `timerEAD` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 
---
--- Table structure for table `timerEAD`
---
+ALTER TABLE `dateEAD` ADD PRIMARY KEY (`id`);
+ALTER TABLE `users` ADD PRIMARY KEY (`id`);
+ALTER TABLE `users` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 
-CREATE TABLE IF NOT EXISTS `timerEAD` (
-`id` int(11) NOT NULL,
-  `start_time` varchar(250) NOT NULL,
-  `end_time` varchar(250) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
-
---
--- Table structure for table `roomsEAD`
---
-
-CREATE TABLE IF NOT EXISTS `rooms` (
-`id` int(11) NOT NULL,
-  `room` varchar(250) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+ALTER TABLE `dateEAD` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;

@@ -63,7 +63,7 @@ body {
     <div class="col-lg-6">
 		<div class="jumbotron">
 		
-		<form class="form-horizontal" method= "post" action = "add.home.php">
+		<form class="form-horizontal" method= "post" action = "add.homePresencial.php">
 			<fieldset>
 
 			<!-- Form Name -->
@@ -83,7 +83,7 @@ body {
 			<label class="col-md-4 control-label" for="faculty">Modalidade</label> 
 			<div class="col-md-5">
 		<select id="faculty" name="faculty" class="form-control">
-        <option value="EAD">EAD</option>
+        <option value="Presencial">Presencial</option>
         </select>
 		</div>
 		</div>

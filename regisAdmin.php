@@ -15,11 +15,8 @@
  $username = $_POST['username'];
  $password = $_POST['password'];
  
-//  $username = 'user3';
-//  $password = 'user3';
  
- 
- $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
+ $sql = "INSERT INTO admin (username, password) VALUES ('$username', '$password')";
 
  if (!mysqli_query ($con, $sql))
  {

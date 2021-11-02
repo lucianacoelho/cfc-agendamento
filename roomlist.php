@@ -1,6 +1,6 @@
 <?php
    include_once("header.php");
-   include_once("navbarAdmin.php");
+//    include_once("navbarAdmin.php");
    include_once("configDB.php");
 ?>
 <html>
@@ -41,11 +41,11 @@ td {
 			   $mysqli = mysqli_connect($hostname,$user,$pass) or die(mysqli_error($mysqli)); 
                mysqli_select_db($mysqli,$database) or die(mysqli_error($mysqli)); 
 
-                    $query = ("SELECT * FROM rooms");
+                    $query = ("SELECT * FROM date");
                     $result = mysqli_query($mysqli,$query) or die(mysqli_error($mysqli));
                     echo "<div class='container'><table width='' class='table table-bordered' border='1' >
                             <tr>
-                            <th>Rooms</th>
+                            <th>Date</th>
 								            <th>Action</th>
                             </tr>";
                         while($row = mysqli_fetch_array($result))
@@ -54,7 +54,7 @@ td {
                         echo "<td>" . $row['room'] . "</td>";
                         echo "<td><form class='form-horizontal' method='post' action='roomlist.php'>
                         <input name='id' type='hidden' value='".$row['id']."';>
-                        <input type='submit' class='btn btn-danger' name='delete' value='Delete'>
+                        <input type='submit' class='btn btn-danger center-block' name='delete' value='Delete'>
                         </form></td>";
                         echo "</tr>";
                         }
@@ -68,13 +68,13 @@ td {
     {
 		echo '<script type="text/javascript">
                       alert("Schedule Successfuly Deleted");
-                         location="tablelist.php";
+                         location="listAdmin.php";
                            </script>';
     }
     if(isset($_POST['id']))
     {
     $id = mysqli_real_escape_string($mysqli,$_POST['id']);
-    $sql = mysqli_query($mysqli,"DELETE FROM rooms WHERE id='$id'");
+    $sql = mysqli_query($mysqli,"DELETE FROM date WHERE id='$id'");
     if(!$sql)
     {
         echo ("Could not delete rows" .mysqli_error($mysqli));

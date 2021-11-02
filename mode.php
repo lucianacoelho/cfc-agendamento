@@ -30,10 +30,10 @@ Aula Presencial
 
 <script>
 function online(){
-    window.location.replace("addRoomTime.php");
+    window.location.replace("addAulaPresencial.php");
 };
 
 function online(){
-    window.location.replace("addRoomTimeEAD.php");
+    window.location.replace("addAulaOnline.php");
 };
 </script>

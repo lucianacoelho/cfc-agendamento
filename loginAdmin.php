@@ -10,7 +10,7 @@ include_once("configDB.php");
 	$connect = mysqli_connect($hostname, $user, $pass)or die("couldn't connect to the database!");
 	mysqli_select_db($connect,$database) or die ("couldn't find database!");
 	 
-	 $query = mysqli_query($connect,"SELECT * FROM users WHERE username='$username'");
+	 $query = mysqli_query($connect,"SELECT * FROM admin WHERE username='$username'");
 	 
 	 $numrows = mysqli_num_rows($query);
 	 
@@ -25,7 +25,7 @@ include_once("configDB.php");
 		 {
 			  echo '<script type="text/javascript">
                 
-                         location="homeAdmin.php";
+                         location="selectorAdmin.php";
                            </script>';
 			 $_SESSION['username'] = $username;
 		 }

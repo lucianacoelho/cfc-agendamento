@@ -163,7 +163,7 @@ body {
 $connect = mysqli_connect($hostname, $user, $password, $database);
 
 // mysql select query
-$query = "SELECT * FROM `rooms`";
+$query = "SELECT * FROM `date`";
 
 // for method 1
 
@@ -226,14 +226,14 @@ while($row2 = mysqli_fetch_array($result2))
 $connect = mysqli_connect($hostname, $user, $password, $database);
 
 // mysql select query
-$query = "SELECT * FROM `rooms`";
+$query = "SELECT * FROM `date`";
 
 // for method 1
 
 $result1 = mysqli_query($connect, $query);
 
 // for method 2
-$query = "SELECT * FROM `rooms`";
+$query = "SELECT * FROM `date`";
 $result2 = mysqli_query($connect, $query);
 
 

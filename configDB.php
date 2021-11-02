@@ -1,7 +1,7 @@
 <?php
 
 $hostname = "localhost";
-$database = "insertion";
+$database = "github";
 $user = "root";
 $pass = "";
 

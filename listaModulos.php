@@ -31,33 +31,33 @@ td {
 <body><br>
 <div class="container">
 
-
 <body>
     <?php
      echo "<tr>
             <td>";
                // your database connection
-              
+               
                
                // select database
                $mysqli = mysqli_connect($hostname,$user,$pass) or die(mysqli_error($mysqli)); 
                mysqli_select_db($mysqli,$database) or die(mysqli_error($mysqli)); 
 
-                    $query = ("SELECT * FROM subject");
+                    $query = ("SELECT * FROM course");
                     $result = mysqli_query($mysqli,$query) or die(mysqli_error($mysqli));
                     echo "<div class='container'><table width='' class='table table-bordered' border='1' >
                             <tr>
                                 <th>Code</th>
-                                <th>Subject</th>
+                                <th>Course</th>
                                 <th>Action</th>
                             </tr>";
                         while($row = mysqli_fetch_array($result))
                         {
                         echo "<tr>";
-                        echo "<td>" . $row['subject_code'] . "</td>";
-                        echo "<td>" . $row['subject_description'] . "</td>";
-                        echo "<td><form class='form-horizontal' method='post' action='sublist.php'>
-                        <input name='subject_id' type='hidden' value='".$row['subject_id']."';>
+                        
+                        echo "<td>" . $row['course_code'] . "</td>";
+                        echo "<td>" . $row['course_name'] . "</td>";
+                        echo "<td><form class='form-horizontal' method='post' action='listaModulos.php'>
+                        <input name='course_id' type='hidden' value='".$row['course_id']."';>
                         <input type='submit' class='btn btn-danger center-block' name='delete' value='Delete'>
                         </form></td>";
                         echo "</tr>";
@@ -75,10 +75,10 @@ td {
                          location="listAdmin.php";
                            </script>';
     }
-    if(isset($_POST['subject_id']))
+    if(isset($_POST['course_id']))
     {
-    $subject_id = mysqli_real_escape_string($mysqli,$_POST['subject_id']);
-    $sql = mysqli_query($mysqli,"DELETE FROM subject WHERE subject_id='$subject_id'");
+    $course_id = mysqli_real_escape_string($mysqli,$_POST['course_id']);
+    $sql = mysqli_query($mysqli,"DELETE FROM course WHERE course_id='$course_id'");
     if(!$sql)
     {
         echo ("Could not delete rows" .mysqli_error($mysqli));

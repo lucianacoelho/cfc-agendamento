@@ -44,7 +44,7 @@ while($row2 = mysqli_fetch_array($result2))
   $path = $_SERVER['DOCUMENT_ROOT'];
    $path .= "header.php";
    include_once("header.php");
-   include_once("navbarAdmin.php");
+   include_once("navbar.php");
    include_once("configDB.php");
 ?>
 <html>
@@ -63,7 +63,7 @@ body {
     <div class="col-lg-6">
 		<div class="jumbotron">
 		
-		<form class="form-horizontal" method= "post" action = "add.home.php">
+		<form class="form-horizontal" method= "post" action = "add.homeEAD.php">
 			<fieldset>
 
 			<!-- Form Name -->
@@ -120,7 +120,7 @@ body {
 $connect = mysqli_connect($hostname, $user, $pass, $database);
 
 // mysql select query
-$query = "SELECT * FROM `date`";
+$query = "SELECT * FROM `dateEAD`";
 
 // for method 1
 
@@ -184,14 +184,14 @@ while($row2 = mysqli_fetch_array($result2))
 $connect = mysqli_connect($hostname, $user, $pass, $database);
 
 // mysql select query
-$query = "SELECT * FROM `date`";
+$query = "SELECT * FROM `dateEAD`";
 
 // for method 1
 
 $result1 = mysqli_query($connect, $query);
 
 // for method 2
-$query = "SELECT * FROM `date`";
+$query = "SELECT * FROM `dateEAD`";
 $result2 = mysqli_query($connect, $query);
 
 
@@ -256,14 +256,14 @@ while($row2 = mysqli_fetch_array($result2))
 $connect = mysqli_connect($hostname, $user, $pass, $database);
 
 // mysql select query
-$query = "SELECT * FROM `timer`";
+$query = "SELECT * FROM `timerEAD`";
 
 // for method 1
 
 $result1 = mysqli_query($connect, $query);
 
 // for method 2
-$query = "SELECT * FROM `timer`";
+$query = "SELECT * FROM `timerEAD`";
 $result2 = mysqli_query($connect, $query);
 
 
@@ -327,14 +327,14 @@ while($row2 = mysqli_fetch_array($result2))
 $connect = mysqli_connect($hostname, $user, $pass, $database);
 
 // mysql select query
-$query = "SELECT * FROM `timer`";
+$query = "SELECT * FROM `timerEAD`";
 
 // for method 1
 
 $result1 = mysqli_query($connect, $query);
 
 // for method 2
-$query = "SELECT * FROM `timer`";
+$query = "SELECT * FROM `timerEAD`";
 $result2 = mysqli_query($connect, $query);
 
 
